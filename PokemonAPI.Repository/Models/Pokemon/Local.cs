@@ -7,7 +7,7 @@
 
         public int Number { get; set; }
 
-        public List<string> Games { get; set; }
+        public List<Game> Games { get; set; }
 
     }
 }

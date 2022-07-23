@@ -15,6 +15,18 @@ namespace PokemonAPI.Repository.Data
         {
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Pokemon>()
+                .HasMany(p => p.Evolutions)
+                .WithOne(e => e.Pokemon);
+
+            modelBuilder.Entity<Evolution>()
+                .HasOne(e => e.BasePokemon);
+                
+
+        }
+
         public DbSet<Pokemon> Pokemons { get; set; }
 
         public DbSet<Status> Statuses { get; set; }
