@@ -1,9 +1,14 @@
-﻿namespace PokemonAPI.Repository.Models.Pokemon
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace PokemonAPI.Repository.Models.Pokemon
 {
     public class Game
     {
         public int Id { get; set; }
 
+        [Required]
+        [MinLength(1)]
+        [MaxLength(30)]
         public string Name { get; set; }
 
     }
