@@ -32,11 +32,6 @@ namespace PokemonAPI.Web.Controllers
                 return NotFound($"Pokemon id: {id} not found.");
             }
 
-            if (!TryValidateModel(pokemon, nameof(Pokemon)))
-            {
-                return BadRequest();
-            }
-
             return pokemon;
         }
 
