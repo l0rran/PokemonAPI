@@ -6,7 +6,7 @@ namespace PokemonAPI.Repository.Models.Pokemon
     {
         public int Id { get; set; }
 
-        [Range(0,20)]
+        [Range(0, 20)]
         public int OrderInSequence { get; set; }
 
         [Required]

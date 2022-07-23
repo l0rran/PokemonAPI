@@ -2,11 +2,6 @@
 using PokemonAPI.Repository.Data;
 using PokemonAPI.Repository.DTO.Pokemon;
 using PokemonAPI.Repository.Models.Pokemon;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PokemonAPI.Repository.Services
 {
@@ -62,6 +57,6 @@ namespace PokemonAPI.Repository.Services
             };
         }
 
-        
+
     }
 }

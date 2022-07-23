@@ -1,10 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PokemonAPI.Repository.Models.Pokemon;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PokemonAPI.Repository.Data
 {
@@ -23,7 +18,7 @@ namespace PokemonAPI.Repository.Data
 
             modelBuilder.Entity<Evolution>()
                 .HasOne(e => e.BasePokemon);
-                
+
 
         }
 

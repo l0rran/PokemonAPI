@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using PokemonAPI.Repository.Data;
-using PokemonAPI.Repository.Models.Pokemon;
 using PokemonAPI.Repository.Services;
 
 var builder = WebApplication.CreateBuilder(args);

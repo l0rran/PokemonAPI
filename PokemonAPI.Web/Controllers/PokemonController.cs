@@ -1,11 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using PokemonAPI.Repository.Data;
+﻿using Microsoft.AspNetCore.Mvc;
 using PokemonAPI.Repository.DTO.Pokemon;
 using PokemonAPI.Repository.Models.Pokemon;
 using PokemonAPI.Repository.Services;
-using System.Net;
 
 namespace PokemonAPI.Web.Controllers
 {
@@ -17,7 +13,7 @@ namespace PokemonAPI.Web.Controllers
 
         public PokemonController(IPokemonService pokemonService)
         {
-            
+
             _pokemonService = pokemonService;
         }
 

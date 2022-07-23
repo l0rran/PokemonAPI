@@ -12,7 +12,7 @@ namespace PokemonAPI.Repository.Models.Pokemon
         [Range(0, 9999)]
         public int Base { get; set; }
 
-        [Range(0,9999)]
+        [Range(0, 9999)]
         public int Min { get; set; }
 
         [Range(0, 9999)]

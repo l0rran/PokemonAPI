@@ -22,10 +22,10 @@ namespace PokemonAPI.Repository.Models.Pokemon
         [Required]
         public PokemonSpecies Species { get; set; }
 
-        [Range(0,100)]
+        [Range(0, 100)]
         public float HeightInMeters { get; set; }
 
-        [Range(0,100)]
+        [Range(0, 100)]
         public float WeightInKg { get; set; }
 
         [Required]
