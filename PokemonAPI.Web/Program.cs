@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using PokemonAPI.Repository.Data;
 using PokemonAPI.Repository.Models.Pokemon;
+using PokemonAPI.Repository.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<PokemonContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddScoped<IPokemonService, PokemonService>();
 
 var app = builder.Build();
 
