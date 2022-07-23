@@ -1,4 +1,4 @@
-﻿namespace PokemonAPI.Repository.Model
+﻿namespace PokemonAPI.Repository.Models.Pokemon
 {
     public class Local
     {

@@ -1,4 +1,4 @@
-﻿namespace PokemonAPI.Repository.Model.Pokemon.Pokemon
+﻿namespace PokemonAPI.Repository.Models.Pokemon
 {
     public class Evolution
     {

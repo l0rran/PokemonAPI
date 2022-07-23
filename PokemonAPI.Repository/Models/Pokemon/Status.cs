@@ -1,6 +1,6 @@
-﻿namespace PokemonAPI.Repository.Model.Pokemon
+﻿namespace PokemonAPI.Repository.Models.Pokemon
 {
-    public class PokemonSpecies
+    public class Status
     {
         public int Id { get; set; }
 
