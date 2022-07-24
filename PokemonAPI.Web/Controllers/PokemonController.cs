@@ -16,9 +16,9 @@ namespace PokemonAPI.Web.Controllers
         }
 
         [HttpGet(Name = "GetPokemon")]
-        public async Task<ActionResult<IEnumerable<PokemonMinimalDTO>>> Get()
+        public async Task<ActionResult<IEnumerable<PokemonMinimalDTO>>> Get([FromQuery] int skip, [FromQuery] int take)
         {
-            return await _pokemonService.GetAllAsync();
+            return Ok(await _pokemonService.GetPaginatedAsync(skip, take));
         }
 
         [HttpGet("{id}")]
@@ -30,7 +30,7 @@ namespace PokemonAPI.Web.Controllers
                 return NotFound($"Pokemon id: {id} not found.");
             }
 
-            return pokemon;
+            return Ok(pokemon);
         }
 
     }
