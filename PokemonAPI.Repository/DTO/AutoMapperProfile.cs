@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using PokemonAPI.Repository.DTO.Pokemon;
+using PokemonAPI.Repository.Models;
 
 namespace PokemonAPI.Repository.DTO
 {
@@ -7,8 +7,8 @@ namespace PokemonAPI.Repository.DTO
     {
         public AutoMapperProfile()
         {
-            CreateMap<Models.Pokemon.Pokemon, PokemonDTO>();
-            CreateMap<Models.Pokemon.Pokemon, PokemonMinimalDTO>();
+            CreateMap<Pokemon, PokemonDTO>();
+            CreateMap<Pokemon, PokemonMinimalDTO>();
         }
     }
 }

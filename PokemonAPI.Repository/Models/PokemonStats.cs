@@ -1,13 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace PokemonAPI.Repository.DTO.Pokemon
+namespace PokemonAPI.Repository.Models
 {
-    public class PokemonStatusDTO
+    public class PokemonStats
     {
         public int Id { get; set; }
 
         [Required]
-        public StatusDTO Status { get; set; }
+        public Stats Stats { get; set; }
 
         [Range(0, 9999)]
         public int Base { get; set; }
@@ -17,5 +17,6 @@ namespace PokemonAPI.Repository.DTO.Pokemon
 
         [Range(0, 9999)]
         public int Max { get; set; }
+
     }
 }

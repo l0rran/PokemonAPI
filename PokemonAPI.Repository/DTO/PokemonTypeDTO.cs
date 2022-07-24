@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace PokemonAPI.Repository.DTO.Pokemon
+namespace PokemonAPI.Repository.DTO
 {
     public class PokemonTypeDTO
     {

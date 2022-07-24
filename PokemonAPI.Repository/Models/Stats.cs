@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace PokemonAPI.Repository.Models.Pokemon
+namespace PokemonAPI.Repository.Models
 {
-    public class Status
+    public class Stats
     {
         public int Id { get; set; }
 

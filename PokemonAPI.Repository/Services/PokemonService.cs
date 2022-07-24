@@ -2,8 +2,8 @@
 using AutoMapper.QueryableExtensions;
 using Microsoft.EntityFrameworkCore;
 using PokemonAPI.Repository.Data;
-using PokemonAPI.Repository.DTO.Pokemon;
-using PokemonAPI.Repository.Models.Pokemon;
+using PokemonAPI.Repository.DTO;
+using PokemonAPI.Repository.Models;
 
 namespace PokemonAPI.Repository.Services
 {

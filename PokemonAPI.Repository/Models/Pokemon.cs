@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace PokemonAPI.Repository.DTO.Pokemon
+namespace PokemonAPI.Repository.Models
 {
-    public class PokemonDTO
+    public class Pokemon
     {
         public int Id { get; set; }
 
@@ -17,10 +17,10 @@ namespace PokemonAPI.Repository.DTO.Pokemon
         public string Description { get; set; }
 
         [Required]
-        public List<PokemonTypeDTO> Types { get; set; }
+        public List<PokemonType> Types { get; set; }
 
         [Required]
-        public PokemonSpeciesDTO Species { get; set; }
+        public PokemonSpecies Species { get; set; }
 
         [Range(0, 100)]
         public float HeightInMeters { get; set; }
@@ -29,12 +29,14 @@ namespace PokemonAPI.Repository.DTO.Pokemon
         public float WeightInKg { get; set; }
 
         [Required]
-        public List<LocalDTO> Locals { get; set; }
+        public List<Local> Locals { get; set; }
 
         [Required]
-        public PokemonStatusDTO Stats { get; set; }
+        public PokemonStats Stats { get; set; }
 
         [Required]
-        public List<EvolutionDTO> Evolutions { get; set; }
+        public List<Evolution> Evolutions { get; set; }
+
+
     }
 }

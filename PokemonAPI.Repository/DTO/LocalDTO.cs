@@ -1,7 +1,7 @@
-﻿using PokemonAPI.Repository.Models.Pokemon;
+﻿using PokemonAPI.Repository.Models;
 using System.ComponentModel.DataAnnotations;
 
-namespace PokemonAPI.Repository.DTO.Pokemon
+namespace PokemonAPI.Repository.DTO
 {
     public class LocalDTO
     {

@@ -1,13 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace PokemonAPI.Repository.Models.Pokemon
+namespace PokemonAPI.Repository.Models
 {
-    public class Game
+    public class PokemonSpecies
     {
         public int Id { get; set; }
 
         [Required]
-        [MinLength(1)]
+        [MinLength(3)]
         [MaxLength(30)]
         public string Name { get; set; }
 

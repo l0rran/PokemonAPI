@@ -1,9 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace PokemonAPI.Repository.Models.Pokemon
+namespace PokemonAPI.Repository.DTO
 {
-    public class PokemonSpecies
+    public class PokemonSpeciesDTO
     {
+
         public int Id { get; set; }
 
         [Required]

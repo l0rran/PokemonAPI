@@ -1,14 +1,15 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace PokemonAPI.Repository.DTO.Pokemon
+namespace PokemonAPI.Repository.Models
 {
-    public class StatusDTO
+    public class Game
     {
         public int Id { get; set; }
 
         [Required]
-        [MinLength(5)]
+        [MinLength(1)]
         [MaxLength(30)]
         public string Name { get; set; }
+
     }
 }
